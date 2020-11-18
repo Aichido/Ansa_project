@@ -1476,12 +1476,25 @@ ol {
 	margin-bottom: 30px;
 }
 
+
+
 .product__details__price span {
 	font-size: 18px;
 	color: #b1b0b0;
 	text-decoration: line-through;
 	margin-left: 10px;
 	display: inline-block;
+}
+
+.product__details__price a {
+	display: inline-block;
+	height: 47px;
+	width: 50px;
+	border: 1px solid #ebebeb;
+	border-radius: 50%;
+	line-height: 40px;
+	text-align: center;
+	padding-top: 1px;
 }
 
 .quantity {
@@ -1533,6 +1546,33 @@ ol {
 	overflow: hidden;
 	margin-bottom: 25px;
 }
+
+.product__details__button ul li a span {
+	position: relative;
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+	-webkit-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+	display: inline-block;
+}
+
+.product__details__button li:hover a span {
+	color: #ffffff;
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+
+.product__details__button ul li a:hover{
+	background: red;
+	color: #ffffff;
+	border: 1px solid red;
+}
+
+
 
 .product__details__button .cart-btn {
 	display: inline-block;
@@ -1741,18 +1781,13 @@ ol {
 	color: #666666;
 }
 
-.product__details__tab {
-	padding-top: 80px;
-	margin-bottom: 65px;
-}
-
 .nav {
 	border-bottom: none;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .nav::before {
@@ -1760,7 +1795,7 @@ ol {
 	left: 0;
 	top: 13px;
 	height: 1px;
-	width: 335px;
+	width: 20%;
 	background: #e1e1e1;
 	content: "";
 }
@@ -1770,7 +1805,7 @@ ol {
 	right: 0;
 	top: 13px;
 	height: 1px;
-	width: 335px;
+	width: 20%;
 	background: #e1e1e1;
 	content: "";
 }
@@ -1797,15 +1832,17 @@ ol {
 	color: #111111;
 }
 
-.tab-content .tab-pane h6 {
-	color: #666666;
-	font-weight: 600;
-	margin-bottom: 24px;
-}
+
 
 .tab-content .tab-pane p:last-child {
 	margin-bottom: 0;
 }
+
+.related__title{
+	padding-top: 80px;
+	margin-bottom: 65px;
+}
+
 
 .related__title h5 {
 	font-size: 20px;
@@ -2454,6 +2491,7 @@ ol {
 	display: none;
 }
 
+
 .contact__form h5 {
 	color: #111111;
 	font-size: 20px;
@@ -2586,10 +2624,10 @@ ol {
 		padding: 5px 15px 5px 15px;
 	}
 	.nav::before {
-		width: 240px;
+		width: 20%;
 	}
 	.nav::after {
-		width: 240px;
+		width: 20%;
 	}
 }
 
@@ -2619,10 +2657,10 @@ ol {
 		margin-bottom: 50px;
 	}
 	.nav::before {
-		width: 125px;
+		width: 20%;
 	}
 	.nav::after {
-		width: 125px;
+		width: 20%;
 	}
 	.discount__content {
 		margin-bottom: 40px;
